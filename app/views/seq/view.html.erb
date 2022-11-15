@@ -1,2 +1,16 @@
-<h1>Seq#view</h1>
-<p>Find me in app/views/seq/view.html.erb</p>
+<table>
+    <% @result.each do |stroka| %> 
+    <tr>         
+            <% stroka.each do |d| %>  
+            <td>
+            <%= d %> <br> 
+            </td>
+            <% end %>        
+    </tr>
+    <% end %>
+
+
+
+</table>
+<%= @count %> <br>
+<%= link_to "Назад", :seq_input %>
