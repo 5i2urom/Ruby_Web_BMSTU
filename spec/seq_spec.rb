@@ -2,15 +2,6 @@
 
 require_relative 'rails_helper'
 
-RSpec.describe SeqController, type: :controller do
-  describe 'GET input' do
-    it 'has a 200 status code' do
-      get :input
-      expect(response.status).to eq(200)
-    end
-  end
-end
-
 RSpec.describe SeqController, type: :request do
   it 'returns all sequences and number of them' do
     post '/view?num=10&str=6+28+3+4+5+6+6+496+3+6'

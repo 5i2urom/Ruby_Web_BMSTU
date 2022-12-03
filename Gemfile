@@ -75,5 +75,4 @@ group :development, :test do
   # rspec
   gem 'rspec-rails', ">= 3.9.0"
   gem 'rails-controller-testing'
-  gem 'faker'
 end
