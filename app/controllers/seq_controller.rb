@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# operates with a sequence
 class SeqController < ApplicationController
   include SeqHelper
 
@@ -13,5 +14,5 @@ class SeqController < ApplicationController
     m = perfect(seq)
     @all_seqs = m[0]
     @count = m[1]
-  end  
+  end
 end
