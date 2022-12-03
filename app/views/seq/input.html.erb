@@ -1,24 +1,24 @@
-<%= form_tag("/seq/view", :method => "get") do %>
+<%= form_with url: view_path do |form| %>
     <table>
         <tr>
             <td>
-                <%= label_tag("Введите количество чисел: ") %>
+                <%= form.label("Введите количество чисел: ") %>
             </td>
             <td>
-                <%= text_field_tag :num, 10 %> <br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <%= label_tag("Введите последовательность: ") %>
-            </td>
-            <td>
-                <%= text_field_tag :str, "6 28 3 4 5 6 6 496 3 6"%> <br>
+                <%= form.text_field :num, :value => 10 %> <br>
             </td>
         </tr>
         <tr>
             <td>
-                <%= submit_tag("Вывести") %>
+                <%= form.label("Введите последовательность: ") %>
+            </td>
+            <td>
+                <%= form.text_field :str, :value => "6 28 3 4 5 6 6 496 3 6" %> <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= form.submit("Вывести") %>
             </td>
         </tr>
     </table>  
