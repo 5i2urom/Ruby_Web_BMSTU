@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"> 
+    <title>ICS6 Bootstrap</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <style> 
+        html {
+            position: relative; 
+            min-height: 100%; 
+        }
+        body {
+            margin-bottom: 40px; 
+        }
+        main {
+            margin-top: 15px; 
+        }
+        footer {
+            height: 40px; 
+            position: absolute; 
+            bottom: 0; 
+            width: 100%; 
+        }
+        .my-primary {
+            background-color: blue; 
+            color: white
+        }
+        .h {background-color: yellow}
+        .d {background-color: pink}
+    </style>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-4">
+            <img
+      src="avatar.jpg" alt="avatar" width="150" height="150"> 
+            </div>
+            <div class="col-8"> 
+                <p> Кошки, живущие в доме, могут мирно сосуществовать как с другими кошками, так и с другими домашними животными и животными-компаньонами, которые в природе являются их жертвами. Так, если к котёнку в возрасте нескольких недель принести мышь, они могут на долгое время сохранять дружеские отношения, однако всегда существует опасность, что во время совместных игр может сработать охотничий инстинкт. Крайне редко куры на деревенском дворе становятся их жертвами, если курятник и двор входят в территорию кошки, так как кошка охраняет эту территорию от других кошек и мелких хищников.
+
+Тем не менее, взрослую кошку, которая в детстве не имела дружеских отношений с другими животными-компаньонами, будет не так-то просто подружить с другим животным. Возможно что кошка будет бояться другого домашнего животного, если оно её больше, если её приучили что его нельзя кусать и царапать (она будет бояться, зная, что не сдержится), если оно проявляет агрессию. </p>
+            </div>
+        </div>
+<div class="row">
+        <div class="col-4">
+                <form>
+                Регистрация
+                <table>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="text" name="email" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <td>Логин:</td>
+                        <td><input type="text" name="login" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <td>Пароль:</td>
+                        <td><input type="password" name="password" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Зарегистрироваться" class="btn btn-primary"/ >           
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+            <div class="col-4"> 
+                <table border="1" class="table"> 
+                    Расписание
+                    <tr>
+                        <th scope="col">Группа/<br>Время</th>
+                        <td class="h">1</td>
+                        <td class="h">2</td>
+                        <td class="h">3</td>
+                    </tr>
+                    <tr>
+                        <td class="h">8:00</td>
+                        <td colspan="3" class="d"><center>Математика</center></td>
+                    </tr>
+                    <tr>
+                        <td class="h">10:00</td>
+                        <td class="d">География</td>
+                        <td class="d">История</td>
+                        <td class="d">Литература</td>
+                    </tr>
+                </table>
+</div>
+        </div>
+        <div class="row">
+<div class="col">
+                <p>
+        <strong>Впереди</strong> пошел <em>граф</em> с <span class="green1">Марьей Дмитриевной</span>; потом <span style="font-family: sans-serif">графиня</span>, которую повел гусарский полковник, нужный человек, с которым Николай должен был догонять полк. Анна Михайловна — <em>с Шиншиным</em>. Берг <strong>подал руку</strong> Вере. <em>Улыбающаяся </em>Жюли Карагина пошла с Николаем <strong>к столу</strong>. За ними шли <em>еще другие пары</em>, протянувшиеся по всей зале, и сзади всех поодиночке <strong>дети</strong>, <span class="green1">гувернеры и гувернантки</span>. <span style="font-family: fantasy;">Официанты </span> зашевелились, стулья загремели, на хорах заиграла <strong>музыка      </strong>, и <em>гости</em> разместились. Звуки домашней музыки графа заменились звуками ножей и вилок, говора гостей, <em>тихих шагов официантов</em>. На одном конце стола во главе сидела <strong>графиня</strong>. Справа <span class="blue1">Марья Дмитриевна</span>, слева <span class="red1">Анна Михайловна</span> и другие гостьи. На другом конце сидел <strong>граф</strong>, слева гусарский полковник, справа <em>Шиншин</em> и другие <span style="font-family: monospace;">гости </span> мужского пола.
+                </p>
+</div>
+        </div> 
+    </main>
+    <footer class="my-primary"> 
+        <div class="container">
+            <p class="footer-text">Footer</p>
+</div>
+    </footer> 
+</body>
+</html>
